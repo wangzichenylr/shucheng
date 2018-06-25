@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/libs/flexible.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/search.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <span class="icon-back"></span>
+            <div class="search-wrap">
+                <span class="icon-search"></span>
+                <input class="inp" type="text" placeholder="输入书名/作者/关键字">
+                <span class="search-btn">搜索</span>
+            </div>
+        </header>
+
+        <main class="main">
+            <ul class="list">
+              
+                <li>老九门</li>
+                <li>很好的</li>
+                <li>坏蛋是怎样炼成的</li>
+                <li>夜店</li>
+              
+            </ul>
+        </main>
+     
+    </div>
+    <script src="js/libs/require.js"></script>
+    <script>
+        require(["./js/main.js"], function() {
+            require(["search"])
+        })
+    </script>
+</body>
+
+</html>

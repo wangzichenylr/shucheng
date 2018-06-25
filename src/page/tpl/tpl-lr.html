@@ -1,0 +1,25 @@
+<script type="text/x-handlebars-template" id="tpl-lr">
+    {{#each this}}
+
+    <li>
+        <a href="book.html?fiction_id={{fiction_id}}">
+            <div class="lrimg">
+                <img src="{{cover}}" alt="">{{#if isShowNum}}
+                <i class="order">{{addIndex @index}}</i>{{/if}}
+                <span class="book-status">{{#if finish}}完结{{else}}连载{{/if}}</span>
+            </div>
+            <div class="text">
+                <h3>{{title}}</h3>
+                <span>{{authors}}</span>
+                <p class="t">{{summary}}</p>
+                <div>
+                    {{#each tags}}
+                    <p>{{this}}</p>
+                    {{/each}}
+                </div>
+            </div>
+        </a>
+    </li>
+
+    {{/each}}
+</script>

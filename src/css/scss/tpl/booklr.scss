@@ -1,0 +1,63 @@
+@import "../_config.scss";
+@import "../_mixin.scss";
+.tpl-lr-list {
+    width: 100%;
+    a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: #000;
+        padding: 0.2rem;
+        box-sizing: border-box;
+        li {
+            display: flex;
+            align-items: center;
+            border-bottom: solid 1px #ccc;
+            padding: 0.25rem 0;
+            .lrimg {
+                width: 30%;
+                position: relative;
+                img {
+                    display: block;
+                    width: 80%;
+                    height: 100%;
+                }
+                .book-status {
+                    color: #fff;
+                    position: absolute;
+                    left: pxTorem(2px);
+                    bottom: pxTorem(2px);
+                }
+                .order {
+                    color: yellow;
+                    background: red;
+                    position: absolute;
+                    padding: 0.1rem;
+                    left: pxTorem(2px);
+                    top: pxTorem(2px);
+                }
+            }
+            .text {
+                width: 70%;
+                margin-left: pxTorem(5px);
+                line-height: pxTorem(18px);
+                h3 {
+                    font-size: pxTorem(16px);
+                }
+                .t {
+                    @include line(2)
+                }
+                div {
+                    display: flex;
+                    p {
+                        padding: 0.05rem;
+                        border: solid 1px $green-color;
+                        margin-right: 0.1rem;
+                        border-radius: pxTorem(2px);
+                        color: $green-color;
+                    }
+                }
+            }
+        }
+    }
+}

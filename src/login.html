@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/libs/flexible.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="tip"></div>
+        <div class="username">用户名：<input type="text" placeholder="请输入用户名" id="user"></div>
+        <div class="pass">密码： <input type="text" placeholder="请输入密码" id="pwd"></div>
+        <button id="sub-btn">登录</button>
+    </div>
+    <script src="js/libs/require.js"></script>
+    <script>
+        require(["./js/main.js"], function() {
+            require(["login"])
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/libs/flexible.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/search.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- <header class="header">
+                    <span class="icon-back"></span>
+                    <div class="search-wrap">
+                        <span class="icon-search"></span>
+                        <input class="inp" type="text" placeholder="输入书名/作者/关键字">
+                        <span class="search-btn">搜索</span>
+                    </div>
+                    <span class="title">搜索title</span>
+                    <a class="icon-home" href="../index.html"></a>
+                </header> -->
+        <header class="header render-header">
+            <!-- <span class="icon-back"></span>
+            <div class="search-wrap">
+                <span class="icon-search"></span>
+                <input class="inp" type="text" placeholder="输入书名/作者/关键字">
+                <span class="search-btn">搜索</span>
+            </div> -->
+        </header>
+
+        <main class="main">
+
+        </main>
+        <footer class="footer"></footer>
+    </div>
+    <script src="js/libs/require.js"></script>
+    <script>
+        require(["./js/main.js"], function() {
+            require(["search"])
+        })
+    </script>
+</body>
+
+</html>

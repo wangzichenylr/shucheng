@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/libs/flexible.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/chapter.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <span class="icon-back"></span>
+            <div class="title-header">
+                <span class="title-her">目录</span>
+            </div>
+            <a class="icon-home" href="index.html">
+                <span class="icon-home"></span>
+            </a>
+        </header>
+        <main class="main">
+            <ul class="list">
+                <!-- <li>第2222章 奇雨回答说</li>
+                <li>第2222章 奇雨回答说</li>
+                <li>第2222章 奇雨回答说</li>
+                <li>第2222章 奇雨回答说</li> -->
+            </ul>
+
+            <script type="text/x-handlebars-template" id="tpl-chapter">
+                {{#each this}}
+                <a href="#">
+                    <li>{{title}}</li>
+                </a>
+                {{/each}}
+            </script>
+
+        </main>
+    </div>
+    <script src="./js/libs/require.js"></script>
+    <script>
+        require(["./js/main.js"], function() { //前面要加上./生成相对路径，是因为require是node的插件，会在node_module的找，如果是绝对路径就会找不到
+            require(["chapter"])
+        })
+    </script>
+
+</body>
+
+</html>

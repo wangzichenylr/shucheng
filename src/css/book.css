@@ -1,0 +1,463 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline; }
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-family: arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+ins,
+a {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: inline-block; }
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*字体大小*/
+/*灰色字体颜色*/
+/*白色字体*/
+/*黑色字体*/
+/*按钮灰色边框*/
+/*蓝色边框颜色*/
+/*蓝色字体颜色*/
+/*group 底部边框颜色*/
+/*header背景*/
+/*搜索框border颜色*/
+/*banner buttle*/
+/*orange line颜色*/
+/*line bottom颜色*/
+/* 书背景*/
+/* 书边框颜色 */
+/*书的阴影*/
+/*绿色标签颜色*/
+/*限免tag背景*/
+/*按钮背景颜色*/
+/*按钮border颜色*/
+/*标签背景*/
+/*标签背景色*/
+/*详情界面*/
+/* 阅读界面 */
+/*阅读界面标题*/
+/*超过几行显示省略号*/
+/*背景*/
+/* 滚动 */
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; }
+  .wrap .content {
+    width: 100%;
+    flex: 1;
+    overflow: hidden; }
+    .wrap .content .block {
+      width: 100%;
+      background-color: #fff;
+      border-top: 0.26667rem solid #ddd; }
+
+.block-bottom {
+  width: 100%;
+  background-color: #fff;
+  border-top: 0.26667rem solid #ddd; }
+  .block-bottom h2 {
+    font-size: 0.42667rem;
+    color: #333; }
+    .block-bottom h2 i {
+      background-color: #53ac7d;
+      color: #fff;
+      font-size: 0.26667rem;
+      padding: 0.05333rem 0.10667rem; }
+
+.block-title-line {
+  width: 100%;
+  border-left: 0.16rem solid #ffab18;
+  border-bottom: 1px solid #ddd;
+  padding: 0.26667rem; }
+  .block-title-line h2 {
+    font-size: 0.42667rem;
+    color: #333; }
+    .block-title-line h2 i {
+      background-color: #53ac7d;
+      color: #fff;
+      font-size: 0.26667rem;
+      padding: 0.10667rem 0.16rem; }
+
+.gen {
+  padding: 0.3rem 0;
+  text-align: center;
+  width: 100%;
+  border-top: solid 1px #ccc;
+  font-size: 0.37333rem; }
+
+/*字体大小*/
+/*灰色字体颜色*/
+/*白色字体*/
+/*黑色字体*/
+/*按钮灰色边框*/
+/*蓝色边框颜色*/
+/*蓝色字体颜色*/
+/*group 底部边框颜色*/
+/*header背景*/
+/*搜索框border颜色*/
+/*banner buttle*/
+/*orange line颜色*/
+/*line bottom颜色*/
+/* 书背景*/
+/* 书边框颜色 */
+/*书的阴影*/
+/*绿色标签颜色*/
+/*限免tag背景*/
+/*按钮背景颜色*/
+/*按钮border颜色*/
+/*标签背景*/
+/*标签背景色*/
+/*详情界面*/
+/* 阅读界面 */
+/*阅读界面标题*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%; }
+
+.wrap {
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  width: 100%;
+  height: 1.17333rem;
+  background-color: #efeff0;
+  border-bottom: solid 1px #ddd;
+  position: relative;
+  line-height: 1.17333rem; }
+  .header .icon-back {
+    width: 1.17333rem;
+    height: 1.17333rem;
+    background: url("../imgs/icon-back.png") no-repeat center center;
+    background-size: 0.58667rem;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .header .title-header {
+    margin-left: 1.06667rem; }
+    .header .title-header h3 {
+      font-size: 0.37333rem; }
+  .header a .icon-home {
+    width: 1.17333rem;
+    height: 1.17333rem;
+    background: url("../imgs/icon-home.png") no-repeat center center;
+    background-size: 0.42667rem;
+    position: absolute;
+    right: -0.05333rem;
+    top: 0; }
+
+.main {
+  flex: 1;
+  overflow: auto; }
+  .main .content {
+    width: 100%; }
+    .main .content .cont {
+      width: 100%;
+      padding: 0.26667rem;
+      box-sizing: border-box;
+      display: flex; }
+      .main .content .cont .cont-img {
+        width: 30%; }
+        .main .content .cont .cont-img img {
+          width: 100%; }
+      .main .content .cont .title {
+        margin-left: 1.06667rem; }
+        .main .content .cont .title h3 {
+          font-size: 0.48rem;
+          line-height: 2; }
+        .main .content .cont .title .title-name {
+          color: #4b99a7;
+          line-height: 2; }
+        .main .content .cont .title .orange {
+          color: #ffab18;
+          line-height: 3; }
+          .main .content .cont .title .orange span {
+            color: #666; }
+        .main .content .cont .title .txt {
+          color: #666; }
+        .main .content .cont .title .title-p {
+          margin-top: 0.4rem;
+          display: flex; }
+          .main .content .cont .title .title-p .series {
+            border: solid 0.02667rem #49ab3f;
+            color: #49ab3f;
+            border-radius: 0.13333rem;
+            padding: 0 0.02667rem;
+            margin-left: 0.13333rem;
+            line-height: auto; }
+
+.start-read {
+  width: 100%;
+  padding: 0.26667rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between; }
+  .start-read a {
+    width: 48%;
+    height: 0.93333rem;
+    background: #f35d02;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.13333rem;
+    line-height: 0.93333rem;
+    font-size: 0.37333rem; }
+    .start-read a .read-btn {
+      width: 100%;
+      height: 0.93333rem;
+      background: #f35d02;
+      color: #fff;
+      text-align: center;
+      border-radius: 0.13333rem;
+      line-height: 0.93333rem;
+      font-size: 0.37333rem; }
+  .start-read .download {
+    width: 48%;
+    height: 0.93333rem;
+    text-align: center;
+    border-radius: 0.13333rem;
+    line-height: 0.93333rem;
+    font-size: 0.37333rem;
+    border: solid 0.02667rem #ccc; }
+
+.text {
+  width: 100%;
+  padding: 0.26667rem;
+  box-sizing: border-box;
+  border-bottom: solid 0.02667rem #ccc;
+  line-height: 2;
+  font-size: 0.37333rem; }
+  .text p {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical; }
+
+.new-text {
+  text-align: center;
+  height: 0.8rem;
+  line-height: 0.8rem; }
+  .new-text a {
+    text-decoration: none;
+    color: #000; }
+
+.label {
+  width: 100%;
+  padding: 0.26667rem;
+  box-sizing: border-box; }
+  .label h1 {
+    font-size: 0.42667rem;
+    font-weight: 600;
+    color: #ccc; }
+  .label .list {
+    width: 100%;
+    display: flex; }
+    .label .list li {
+      padding: 0.13333rem 0.26667rem;
+      border: solid 1px #ccc;
+      margin: 0.26667rem; }
+      .label .list li:nth-child(3n+1) {
+        background: #fbebe8;
+        border-radius: 0.26667rem; }
+      .label .list li:nth-child(3n+2) {
+        background: #fcedda;
+        border-radius: 0.26667rem; }
+      .label .list li:nth-child(3n+3) {
+        background: #e8f9db;
+        border-radius: 0.26667rem; }
+
+.author {
+  width: 100%;
+  padding: 0.26667rem;
+  box-sizing: border-box; }
+  .author .author-title {
+    font-size: 0.37333rem;
+    margin: 0 0.53333rem; }
+  .author .author-img {
+    width: 30%;
+    margin: 0.26667rem; }
+    .author .author-img img {
+      width: 100%; }
+  .author .girl {
+    margin: 0 0.4rem; }
+
+.bottom {
+  width: 100%;
+  padding: 0.26667rem;
+  box-sizing: border-box; }
+  .bottom p {
+    font-size: 0.37333rem;
+    line-height: 2; }
+  .bottom span {
+    font-size: 0.32rem;
+    line-height: 2; }

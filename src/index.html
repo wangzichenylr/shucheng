@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/libs/flexible.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-4.1.6.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <span class="icon-sign"></span>
+            <div class="switch-tab">
+                <span class="tab-item active">书城</span>
+                <span class="tab-item">书架</span>
+                <div class="line"></div>
+            </div>
+            <span class="icon-person"></span>
+        </header>
+        <div class="content">
+            <div class="city-swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="city-slide1 swiper-slide">
+                        <div class="city-slide1-box" up="上拉加载" down="下拉刷新">
+                            <div class="search-a">
+                                <a href="./search.html">
+                                    <img src="imgs/icon-search.png" alt="">
+                                    <p>输入书名 / 作者 / 关键字</p>
+                                </a>
+                            </div>
+                            <div class="banner swiper-container swiper-no-swiping">
+                                <div class="city-wrapper swiper-wrapper">
+                                    <!-- <div class="swiper-slide">
+                                        <img src="imgs/banner2.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="imgs/banner3.jpg" alt="">
+                                    </div> -->
+                                </div>
+                                <script type="text/x-handlebars-template" id="tel-swiper">
+                                    {{#each data}}
+                                    <div class="swiper-slide">
+                                        <img class="img" src="{{ad_pic_url}}" alt="">
+                                    </div>
+                                    {{/each}}
+                                </script>
+                            </div>
+
+                            <div class="gril">
+                                <!-- <dl>
+                                    <dt></dt>
+                                    <dd>限免</dd>
+                                 -->
+                            </div>
+                            <script type="text/x-handlebars-template" id="tpl-gril">
+                                {{#each data_list}}
+                                <a href="#">
+                                    <dl>
+                                        <dt><img src="{{img}}"></dt>
+                                        <dd>{{ad_name}}</dd>
+                                    </dl>
+                                </a>
+                                {{/each}}
+                            </script>
+
+                            <div class="block">
+                                <div class="block-title-line">
+                                    <a href="#">
+                                        <h2 class="">本周最火</h2>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="tpl-list1">
+                                <!-- <li>
+                                    <div class="img">
+                                        <img src="imgs/book1.jpg" alt="">
+                                        <p class="">绝命诱惑</p>
+                                    </div>
+                                </li>
+                                 -->
+                            </ul>
+                            <p class="gen">查看更多</p>
+                            <div class="block-bottom">
+                                <a href="#">
+                                    <h2>重磅推荐 <i>推</i></h2>
+                                    <span>男<b>|</b><i class="nv">女</i></span>
+                                </a>
+                            </div>
+                            <ul class="tpl-lr-list">
+                                <!-- <a href="book.html">
+                                    <li>
+                                        <div class="lrimg">
+                                            <img src="{{cover}}" alt="">{{#if isShowNum}}
+                                            <i class="order">{{addIndex @index}}</i>{{/if}}
+                                            <span class="book-status">{{#if finish}}完结{{else}}连载{{/if}}</span>
+                                        </div>
+                                        <div class="text">
+                                            <h3>{{title}}</h3>
+                                            <span>{{authors}}</span>
+                                            <p class="t">{{summary}}</p>
+                                            <div>
+                                                {{#each tags}}
+                                                <p>{{this}}</p>
+                                                {{/each}}
+                                            </div>
+                                        </div>
+                                    </li>
+                                </a> -->
+                            </ul>
+                            <ul class="block-list">
+
+                            </ul>
+                            <script type="text/x-handlebars-template" id="tpl-block-list">
+                                {{#each this}}{{#limit @index}}
+                                <a href="#">
+                                    <li>
+                                        <i class="order">{{addInd @index}}</i>
+                                        <p>{{title}}</p>
+                                        <span>{{authors}}</span>
+                                    </li>
+                                </a>
+                                {{/limit}} {{/each}}
+                            </script>
+                            <div class="change">
+                                <p class="chenges">换一换</p>
+                                <p>查看全部</p>
+                            </div>
+                            <ul class="blockbuster-tpl">
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="city-slide2 swiper-slide">
+                        <div class="city-slide2-box">
+                            <div class="search-a">
+                                <a href="search.html">
+                                    <img src="imgs/icon-search.png" alt="">
+                                    <p>输入书名 / 作者 / 关键字</p>
+                                </a>
+                                <div class="icon-div">
+                                    <img src="imgs/icon-switch.png" alt="">
+                                </div>
+                            </div>
+                            <ul class="list"> </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <footer class="footer">22</footer> -->
+    </div>
+    <script src="js/libs/require.js"></script>
+    <script>
+        require(["./js/main.js"], function() {
+            require(["index"])
+        })
+    </script>
+</body>
+
+</html>

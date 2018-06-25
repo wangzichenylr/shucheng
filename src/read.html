@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/libs/flexible.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/read.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="top none">
+            <div class="top-left">
+                <span class="icon-back"></span>
+                <p>返回</p>
+            </div>
+            <div class="top-right">
+                <span class="icon-more"></span>
+            </div>
+        </div>
+        <main class="main">
+
+            <div class="content">
+                <!-- <div class="nav">
+                    <h1>第一章</h1>
+                    <h2>进城</h2> 
+                </div> 
+                <!-- <p>往事历历在目，杨颖一阵心酸，带着歉意说道：“对不起，咱们走吧……”</p>-->
+            </div>
+            <script type="text/x-handlebars-template" id="tpl-read">
+                <div class="nav">
+                    <h1>{{t}}</h1>
+                </div>
+                {{#each p}}
+                <p>{{this}}</p>
+                {{/each}}
+            </script>
+        </main>
+        <div class="bottom none">
+            <div class="footer">
+                <div class="title">
+                    <p class="pre-btn">上一章</p>
+                    <div class="num">
+                        <span class="pre">1</span>
+                        <span>/</span>
+                        <span class="total-chapter">10</span>
+                    </div>
+                    <p class="next-btn">下一章</p>
+                </div>
+                <div class="footer-bo">
+                    <dl class="list-li">
+                        <dt>
+                            <img src="imgs/icon-swicth-list.png" alt="">
+                        </dt>
+                        <dd>目录</dd>
+                    </dl>
+                    <dl class="fsize size">
+                        <dt>
+                             <!-- <img src="imgs/icon-font.png" alt=""> -->
+                        </dt>
+                        <dd>字体</dd>
+                    </dl>
+                    <dl class="dn day">
+                        <dt>
+                             <!-- <img src="imgs/icon-light.png" alt=""> -->
+                        </dt>
+                        <dd>白天</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                           <img src="imgs/icon-down.png" alt="">
+                       </dt>
+                        <dd>下载</dd>
+                    </dl>
+                </div>
+                <div class="style none">
+                    <div class="style-size">
+                        <span>字号</span>
+                        <p class="lx">大</p>
+                        <p class="xs">小</p>
+                    </div>
+                    <div class="style-bg">
+                        <span>背景</span>
+                        <div class="bg">
+                            <span class="active" data-bg="#f7eee5"></span>
+                            <span data-bg="#e9dfc7"></span>
+                            <span data-bg="#a4a4a4"></span>
+                            <span data-bg="#cdefce"></span>
+                            <span data-bg="#283548"></span>
+                            <span data-bg="#0f1410"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/libs/require.js"></script>
+    <script>
+        require(["./js/main.js"], function() {
+            require(["read"])
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+@import "../_config.scss";
+@import "../_mixin.scss";
+.tpl-list1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+        width: 30%;
+        text-align: center;
+        margin: 0.2rem 0;
+        img {
+            width: 80%;
+            height: 80%;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+        }
+        p {
+            width: pxTorem(70px);
+            @include line(2);
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}

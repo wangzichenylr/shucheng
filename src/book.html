@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/libs/flexible.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/book.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <span class="icon-back"></span>
+            <div class="title-header">
+                <!-- <span class="title-her">老九门</span> -->
+            </div>
+
+            <a class="icon-home" href="index.html">
+                <span class="icon-home"></span>
+            </a>
+        </header>
+        <main class="main">
+            <div class="content">
+                <div class="cont">
+                    <div class="cont-img">
+                        <!--<img src="imgs/book1.jpg" alt="">-->
+                    </div>
+                    <div class="title">
+                        <div class="title-txt">
+                            <!-- <h3>老九门</h3> -->
+                        </div>
+                        <p class="title-name">铁锁</p>
+                        <p class="orange">☆ ☆ ☆ ☆ <span>☆ &nbsp;4921个评价</span></p>
+                        <p class="txt">价格:5书币/千字</p>
+                        <div class="title-p">
+                            <p class="txt">字数：999万字</p>
+                            <p class="series">连载中</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 模板 -->
+                <script type="text/x-handlebars-template" id="tpl-img-top">
+                    <img src="{{cover}}" alt="">
+                </script>
+                <script type="text/x-handlebars-template" id="tpl-book">
+                    <h3>{{title}}</h3>
+                </script>
+                <div class="start-read">
+                    <a href="#" class="read-a">
+                        <p class="read-btn">开始阅读</p>
+                    </a>
+                    <p class="download">下载</p>
+                </div>
+                <div class="text">
+                    <p>大发生过任图是虽然挺好听书币V型就昂扭何地图是何地图是虽然挺好听书币V型就昂扭何地图是虽然挺好听书币V型就昂扭虽然挺好听书币V型就昂扭矩放大是打过任何地图是虽然挺好听书币V型就昂扭何地图是何地图是虽然挺好听书币V型就昂扭何地图是虽然挺好听书币V型就昂扭虽然挺好听书币V型就昂扭矩放大是打开就不能快开就不能快速</p>
+                </div>
+                <div class="new-text">
+                    <!-- <a href="chapter-list.html?fiction_id={{fiction_id}}">
+                        <p>最新:第2343章&nbsp; 又是韩先生&nbsp; 更新与21小时</p>
+                    </a> -->
+                </div>
+                <!-- 点击最新章节，跳转到这本书的最新章节 -->
+                <script type="text/x-handlebars-template" id="tpl-new">
+                    <a href="chapter-list.html?fiction_id={{fiction_id}}">
+                        <p>最新:第2343章&nbsp; 又是韩先生&nbsp; 更新与21小时</p>
+                    </a>
+                </script>
+                <div class="label block">
+                    <h1>类别标签</h1>
+                    <ul class="list">
+                        <li>很好的</li>
+                        <li>星期一</li>
+                        <li>很好的</li>
+                        <li>星期一</li>
+                    </ul>
+                </div>
+                <div class="author block">
+                    <p class="author-title">作者其他图书</p>
+                    <div class="author-img">
+                        <!-- <img src="imgs/book1.jpg" alt=""> -->
+                    </div>
+                    <!-- 模板 -->
+                    <script type="text/x-handlebars-template" id="tpl-img">
+                        <div class="cont-img">
+                            <img src="{{cover}}" alt="">
+                        </div>
+                    </script>
+
+                    <p class="girl">美女导演的贴身判官</p>
+                </div>
+                <div class="bottom block">
+                    <p>图书信息</p>
+                    <span>版权：阅文集团旗下起点中文网</span>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/libs/require.js"></script>
+    <script>
+        require(["./js/main.js"], function() {
+            require(["book"])
+        })
+    </script>
+</body>
+
+</html>
